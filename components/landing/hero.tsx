@@ -30,7 +30,7 @@ export default function Hero({ settings }: { settings?: SiteSetting | null }) {
 				<div className="space-y-4">
 					<h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none text-white">
 						{firstWord}
-						<span className="text-emerald-500">{restWords}</span>
+						<span className="text-emerald-500 block lg:inline">{restWords}</span>
 					</h1>
 					<h2 className="text-xl md:text-3xl font-black tracking-wide text-foreground uppercase">Di mana Rumah & Garasi Bertemu.</h2>
 					<p className="text-muted text-base md:text-lg max-w-3xl leading-relaxed font-medium">Kami menghadirkan standar baru restorasi, pengecatan, kustomisasi bodi, dan penyetelan performa mesin di Lombok. Dikerjakan dengan keahlian presisi tinggi, material premium, dan suasana bengkel yang bersahabat untuk mendiskusikan visi kendaraan impian Anda.</p>
