@@ -65,6 +65,9 @@ CREATE TABLE "site_setting" (
     "phoneNumber" TEXT,
     "email" TEXT,
     "mapsIframe" TEXT,
+    "instagram" TEXT,
+    "facebook" TEXT,
+    "openingHours" TEXT,
     "updatedAt" TIMESTAMP(3) NOT NULL,
 
     CONSTRAINT "site_setting_pkey" PRIMARY KEY ("id")

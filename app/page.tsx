@@ -29,7 +29,7 @@ export default async function Home() {
 		<main className="min-h-screen">
 			<div className="dark bg-background text-foreground">
 				<Navbar settings={settings} />
-				<Hero />
+				<Hero settings={settings}/>
 			</div>
 
 			<About />
