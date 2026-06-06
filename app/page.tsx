@@ -9,6 +9,7 @@ import InstaFeed from "@/components/landing/insta-feed";
 import Contact from "@/components/landing/contact";
 import Footer from "@/components/landing/footer";
 
+export const dynamic = "force-dynamic";
 export default async function Home() {
 	const [settings, servicesProducts, catalogProducts, galleryImages] = await Promise.all([
 		prisma.siteSetting.findUnique({ where: { id: "global" } }),
@@ -29,7 +30,7 @@ export default async function Home() {
 		<main className="min-h-screen">
 			<div className="dark bg-background text-foreground">
 				<Navbar settings={settings} />
-				<Hero settings={settings}/>
+				<Hero settings={settings} />
 			</div>
 
 			<About />
