@@ -4,6 +4,29 @@ import { headers } from "next/headers";
 import { auth } from "@/lib/auth";
 import { getSiteSettings } from "@/lib/data/settings";
 import LogoutButton from "@/components/admin/logout-button";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "GREENHAUZGARAGE",
+	keywords: ["Bengkel Lombok", "Restorasi Kendaraan Lombok", "Body Custom Lombok", "Engine Tuning", "Bengkel Modifikasi", "Greenhauzgarage", "Pengecatan Mobil Motor"],
+	openGraph: {
+		title: "GREENHAUZGARAGE | Modifikasi & Restorasi di Lombok",
+		description: "Standar baru restorasi, kustomisasi bodi, dan engine tuning dengan suasana bengkel bersahabat.",
+		type: "website",
+		locale: "id_ID",
+		siteName: "Greenhauzgarage",
+	},
+
+	icons: {
+		icon: [
+			{ url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+			{ url: "/favicon.svg", type: "image/svg+xml" },
+		],
+		shortcut: "/favicon-96x96.png",
+		apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+	},
+	manifest: "/site.webmanifest",
+};
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
 	const session = await auth.api.getSession({
