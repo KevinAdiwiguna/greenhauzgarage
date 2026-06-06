@@ -5,6 +5,7 @@
     "": {
       "name": "greenhauzgarage",
       "dependencies": {
+        "greenhauzgarage": ".",
         "@aws-sdk/client-s3": "^3.1058.0",
         "@aws-sdk/s3-request-presigner": "^3.1058.0",
         "@heroui/react": "^3.1.0",
@@ -877,6 +878,8 @@
     "grammex": ["grammex@3.1.12", "", {}, "sha512-6ufJOsSA7LcQehIJNCO7HIBykfM7DXQual0Ny780/DEcJIpBlHRvcqEBWGPYd7hrXL2GJ3oJI1MIhaXjWmLQOQ=="],
 
     "graphmatch": ["graphmatch@1.1.1", "", {}, "sha512-5ykVn/EXM1hF0XCaWh05VbYvEiOL2lY1kBxZtaYsyvjp7cmWOU1XsAdfQBwClraEofXDT197lFbXOEVMHpvQOg=="],
+
+    "greenhauzgarage": ["greenhauzgarage@root:", {}],
 
     "has-bigints": ["has-bigints@1.1.0", "", {}, "sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg=="],
 
